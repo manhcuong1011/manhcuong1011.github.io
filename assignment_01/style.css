@@ -1,0 +1,13 @@
+body {
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #5c4033;
+}
+
+.highlight {
+    background-color: yellow;
+}
