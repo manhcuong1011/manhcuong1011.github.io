@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Calculator</h1>
+    <div class="calculator">
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <p id="error" class="error"></p>
+        
+        <button onclick="add()">+</button>
+        <button onclick="subtract()">-</button>
+        <button onclick="multiply()">×</button>
+        <button onclick="divide()">÷</button>
+        
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function validate() {
+            const num1 = document.getElementById('num1').value;
+            const num2 = document.getElementById('num2').value;
+            const error = document.getElementById('error');
+            
+            if (num1 === '' || num2 === '') {
+                error.textContent = 'Please enter both numbers';
+                return null;
+            }
+            
+            error.textContent = '';
+            return [Number(num1), Number(num2)];
+        }
+
+        function add() {
+            const nums = validate();
+            if (nums) {
+                document.getElementById('result').textContent = nums[0] + nums[1];
+            }
+        }
+
+        function subtract() {
+            const nums = validate();
+            if (nums) {
+                document.getElementById('result').textContent = nums[0] - nums[1];
+            }
+        }
+
+        function multiply() {
+            const nums = validate();
+            if (nums) {
+                document.getElementById('result').textContent = nums[0] * nums[1];
+            }
+        }
+
+        function divide() {
+            const nums = validate();
+            if (nums) {
+                if (nums[1] === 0) {
+                    document.getElementById('error').textContent = 'Cannot divide by 0';
+                    return;
+                }
+                document.getElementById('result').textContent = nums[0] / nums[1];
+            }
+        }
+    </script>
+</body>
+</html>
