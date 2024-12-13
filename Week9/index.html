@@ -14,6 +14,7 @@
         <button onclick="subtract()">-</button>
         <button onclick="multiply()">x</button>
         <button onclick="divide()">÷</button>
+        <button onclick="checkNumber()">Check number can divide by 2</button>
         <p id="result"></p>
     </div>
 
@@ -63,6 +64,14 @@
                 document.getElementById('result').textContent = nums[0] / nums[1];
             }
         }
+        function checkNumber() {
+            const nums=result();
+            if(nums){
+                if(nums[1] % 2 == 0){
+                    document.getElementById('result').textContent = document.getElementById('result').innerHTML = 'This number can divide by 2';
+            }
+        }
+
     </script>
 </body>
 </html>

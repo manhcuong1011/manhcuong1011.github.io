@@ -1,8 +1,12 @@
 body {
+    padding: center;
     height: 100vh;
+    width: 50%;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color:pink;
+    text-align: center;
+    b
 }
 .title{
     text-align: center;
