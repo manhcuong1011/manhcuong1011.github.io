@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff; /* Light Blue Background */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #5b9bd5, #8ab6d6); /* Blue Gradient */
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Form Section */
+.form-section, .meal-section, .tip-section {
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #5b9bd5; /* Blue Header */
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5b9bd5; /* Blue Button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #3a79b6; /* Darker Blue Hover */
+}
+
+#message {
+    margin-top: 10px;
+    color: #3a79b6;
+    text-align: center;
+}
+
+/* Meal Plan Section */
+.meal-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meal-card {
+    background: #f0f4f8; /* Light Grayish Blue */
+    border: 1px solid #d0dbe5;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+}
+
+.meal-card h3 {
+    color: #5b9bd5;
+    margin-bottom: 5px;
+}
+
+.meal-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #5b9bd5;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
